@@ -18,7 +18,7 @@ app.get("/",function(req,response){
     response.sendFile(path.join(__dirname,"public/index.html"))
 })
 
-app.post("/send_mail", function(req,response){
+app.post("/send_email", function(req,response){
     var name=req.body.name;
     var from=req.body.from;
     var subject=req.body.subject;
