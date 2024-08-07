@@ -14,7 +14,7 @@ app.use(express.urlencoded({extended:true}))
 app.use(express.static(path.join(__dirname,"public")));
 
 // Routing 
-app.get("/",function(req,response){
+app.get("index.html",function(req,response){
     response.sendFile(path.join(__dirname,"public/index.html"))
 })
 
