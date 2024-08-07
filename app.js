@@ -14,11 +14,11 @@ app.use(express.urlencoded({extended:true}))
 app.use(express.static(path.join(__dirname,"public")));
 
 // Routing 
-app.get("index.html",function(req,response){
+app.get("/",function(req,response){
     response.sendFile(path.join(__dirname,"public/index.html"))
 })
 
-app.post("/send_email", function(req,response){
+app.post("index.html", function(req,response){
     var name=req.body.name;
     var from=req.body.from;
     var subject=req.body.subject;
@@ -35,7 +35,7 @@ app.post("/send_email", function(req,response){
       var mailOptions = {
         name:name,
         from:from,
-        to:"chimunhuevans@gmail.com",
+        to:"evangelistjavangwe55@gmail.com",
         subject:subject,
         text: message
       };
