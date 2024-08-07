@@ -35,7 +35,7 @@ app.post("/send_email", function(req,response){
       var mailOptions = {
         name:name,
         from:from,
-        to:"evangelistjavangwe55@gmail.com",
+        to:"chimunhuevans@gmail.com",
         subject:subject,
         text: message
       };
